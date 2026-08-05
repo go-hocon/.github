@@ -33,10 +33,11 @@ go-hocon is a pure-Go (CGO_ENABLED=0) parser for HOCON, the Human-Optimized Conf
 - **Pure Go, zero cgo.** `CGO_ENABLED=0`; imports the Go standard library only. Cross-compiles to the
   six 64-bit Go targets (amd64, arm64, riscv64, loong64, ppc64le, s390x) and WebAssembly, linking into a static binary.
 - **Faithful to the HOCON / Typesafe Config specification.**
-- **An engine, not a service.** A small, stable Go API you embed — part of the
-  pure-Go Puppet stack (siblings [go-facter](https://github.com/go-facter),
-  [go-hiera](https://github.com/go-hiera), [go-pcore](https://github.com/go-pcore),
-  [go-puppet](https://github.com/go-puppet)).
+- **An engine, not a service.** A small, stable Go API you embed — validated
+  against the reference [`puppetlabs/ruby-hocon`](https://github.com/puppetlabs/ruby-hocon)
+  gem, and part of a wider family of pure-Go config/data-format engines
+  alongside [go-eyaml](https://github.com/go-eyaml) and
+  [go-augeas](https://github.com/go-augeas).
 - **100% test coverage** including error branches, enforced as a CI gate.
 
 BSD-3-Clause.
